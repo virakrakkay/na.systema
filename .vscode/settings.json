@@ -2,13 +2,13 @@
   "containers.commands.composeUp": [
     {
       "label": "Compose Up",
-      "template": "/bin/sh \"${workspaceFolder}/.vscode/run-and-open.sh\" ${configurationFile} up ${detached} ${build}"
+      "template": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"${workspaceFolder}\\.vscode\\run-and-open.ps1\" ${configurationFile} up ${detached}"
     }
   ],
   "containers.commands.composeUpSubset": [
     {
       "label": "Compose Up",
-      "template": "/bin/sh \"${workspaceFolder}/.vscode/run-and-open.sh\" ${profileList} ${configurationFile} up ${detached} ${build} ${serviceList}"
+      "template": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"${workspaceFolder}\\.vscode\\run-and-open.ps1\" ${profileList} ${configurationFile} up ${detached}"
     }
   ]
 }

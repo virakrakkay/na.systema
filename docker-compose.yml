@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: admin
     ports:
-      - "8080:80"
+      - "8002:80"
 
   client:
     build:
@@ -23,4 +23,4 @@ services:
       dockerfile: Dockerfile
     container_name: api
     ports:
-      - "8000:8000"
+      - "8001:8000"

@@ -18,9 +18,9 @@ done
 
 for s in $services; do
   case "$s" in
-    admin)  url="http://localhost:8080" ;;
+    admin)  url="http://localhost:8002" ;;
     client) url="http://localhost:8081" ;;
-    api)    url="http://localhost:8000/docs" ;;
+    api)    url="http://localhost:8001/docs" ;;
     *)      continue ;;
   esac
   echo "Opening $s: $url"
