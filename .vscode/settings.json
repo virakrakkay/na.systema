@@ -1,0 +1,14 @@
+{
+  "containers.commands.composeUp": [
+    {
+      "label": "Compose Up",
+      "template": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"${workspaceFolder}\\.vscode\\run-and-open.ps1\" ${configurationFile} up ${detached}"
+    }
+  ],
+  "containers.commands.composeUpSubset": [
+    {
+      "label": "Compose Up",
+      "template": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"${workspaceFolder}\\.vscode\\run-and-open.ps1\" ${profileList} ${configurationFile} up ${detached}"
+    }
+  ]
+}
